@@ -1,0 +1,1 @@
+this is a synchronous version of github.com/mikedewar/go-sqsReader
