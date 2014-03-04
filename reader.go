@@ -91,6 +91,10 @@ func (r *Reader) Start() {
 				continue
 			}
 
+			if len(m.Body) == 0 {
+				continue
+			}
+
 			for _, body := range m.Body {
 				err = json.Unmarshal([]byte(body), &m1)
 				if err != nil {
